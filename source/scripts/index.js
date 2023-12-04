@@ -1,5 +1,3 @@
-"use strict";
-
 // menu
 let menu = document.querySelector(".header__button-menu");
 let inner = document.querySelector(".header__menu");
