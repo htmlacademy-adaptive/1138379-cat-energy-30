@@ -1,0 +1,101 @@
+@media screen and (min-width: $mobile-width) {
+  .contact__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    row-gap: 26px;
+  }
+
+  .contact__title {
+    width: 50%;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    text-transform: uppercase;
+  }
+
+  .contact__address {
+    width: 50%;
+
+    font-style: normal;
+    line-height: 20px;
+  }
+
+  .contact__map {
+    display: flex;
+
+    background-image: url("../../images/contact-map-pin.svg");
+    background-repeat: no-repeat;
+    background-position: center 140px;
+    background-size: 57px 53px;
+
+    &-iframe {
+      position: relative;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .contact__inner {
+    justify-content: space-between;
+    padding: 60px 70px 60px;
+  }
+
+  .contact__title {
+    width: 26%;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contact__address {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+
+    text-align: right;
+
+    gap: 20px;
+  }
+
+  .contact__map {
+    background-size: 113px 106px;
+
+    &-iframe {
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+  }
+
+  .contact__inner {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 39%;
+    height: 200px;
+    padding: 60px 74px 60px 80px;
+
+    background-color: #ffffff;
+  }
+
+  .contact__title {
+    width: 50%;
+  }
+
+  .contact__address {
+    width: 39%;
+
+    text-align: left;
+  }
+}

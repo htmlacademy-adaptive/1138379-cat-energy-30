@@ -1,0 +1,194 @@
+@media screen and (min-width: $mobile-width) {
+  .diet__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 23px;
+  }
+
+  .diet__item {
+    position: relative;
+
+    padding: 30px 33px 18px 20px;
+
+    background-color: #f2f2f2;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      height: 50px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--slim {
+      &::before {
+        top: 21px;
+        left: 20px;
+
+        width: 50px;
+
+        background-image: url("../../images/diet-slim-mobile.svg");
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 22px;
+        left: 13px;
+
+        width: 67px;
+
+        background-image: url("../../images/diet-pro-mobile.svg");
+      }
+    }
+  }
+
+  .diet__title {
+    margin-bottom: 29px;
+    padding-left: 70px;
+  }
+
+  .diet__text {
+    margin-bottom: 16px;
+    padding-bottom: 21px;
+
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .diet__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s;
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover .diet__arrow,
+    &:focus .diet__arrow {
+      transform: translateX(0);
+
+      transition: transform 0.3s;
+    }
+  }
+
+  .diet__span {
+    z-index: 1;
+
+    padding-right: 15px;
+
+    background-color: #f2f2f2;
+  }
+
+  .diet__arrow {
+    transform: translateX(-5px);
+
+    transition: transform 0.3s;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .diet__list {
+    gap: 30px;
+  }
+
+  .diet__item {
+    padding: 77px 39% 57px 52px;
+
+    &--slim::before {
+      top: 81px;
+      left: 63%;
+
+      width: 200px;
+      height: 211px;
+
+      background-image: url("../../images/diet-slim-tablet.svg");
+    }
+
+    &--pro::before {
+      top: 91px;
+      left: 58%;
+
+      width: 268px;
+      height: 200px;
+
+      background-image: url("../../images/diet-pro-tablet.svg");
+    }
+  }
+
+  .diet__title {
+    margin-bottom: 23px;
+    padding: 0;
+  }
+
+  .diet__text {
+    width: calc(100% - 40px);
+    margin-bottom: 58px;
+    padding: 0;
+
+    border: 0;
+  }
+
+  .diet__link {
+    font-size: 20px;
+  }
+
+  .diet__span {
+    padding-right: 26px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .diet__list {
+    flex-direction: row;
+
+    gap: 80px;
+  }
+
+  .diet__item {
+    width: 46.7%;
+    padding: 80px 61px 60px 52px;
+
+    &--slim::before {
+      top: 41px;
+      left: 52px;
+
+      width: 100px;
+      height: 107px;
+
+      background-image: url("../../images/diet-slim-desktop.svg");
+    }
+
+    &--pro::before {
+      top: 48px;
+      left: 30px;
+
+      width: 140px;
+      height: 100px;
+
+      background-image: url("../../images/diet-pro-desktop.svg");
+    }
+  }
+
+  .diet__title {
+    margin-bottom: 72px;
+    padding-left: 163px;
+  }
+
+  .diet__text {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}

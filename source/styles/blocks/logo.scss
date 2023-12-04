@@ -1,0 +1,60 @@
+@media screen and (min-width: $mobile-width) {
+  .logo {
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .logo__icon {
+    &--mobile {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .logo__icon {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .logo__icon {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

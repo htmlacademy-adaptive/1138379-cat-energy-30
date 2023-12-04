@@ -1,0 +1,20 @@
+@media screen and (min-width: $mobile-width) {
+  .logo-title {
+    display: inline-flex;
+
+    &__icon {
+      color: #000000;
+
+      transition: color 0.3s;
+
+      &:hover,
+      &:focus {
+        color: #3e3e3e;
+      }
+
+      &:active {
+        color: #6b6b6b;
+      }
+    }
+  }
+}

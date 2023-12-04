@@ -1,0 +1,17 @@
+@media screen and (min-width: $mobile-width) {
+  .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .subtitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

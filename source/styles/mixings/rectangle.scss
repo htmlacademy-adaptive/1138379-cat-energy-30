@@ -1,0 +1,43 @@
+@media screen and (min-width: $mobile-width) {
+  .rectangle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    padding: 10px 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #68b738;
+
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: #5eaa2f;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .rectangle {
+    padding: 14px 20px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

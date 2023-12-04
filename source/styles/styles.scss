@@ -1,7 +1,31 @@
-/* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/fonts.scss";
+@use "sass:math";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+// configs
+@import "configs/fonts";
+@import "configs/container";
+@import "configs/visually-hidden";
+@import "configs/global";
+
+// mixings
+@import "mixings/circle";
+@import "mixings/ellipse";
+@import "mixings/rectangle";
+@import "mixings/title";
+@import "mixings/subtitle";
+
+// blocks
+@import "blocks/logo-title";
+@import "blocks/logo";
+
+
+// components
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+
+// home-page
+@import "components/home-page/intro";
+@import "components/home-page/diet";
+@import "components/home-page/instruction";
+@import "components/home-page/example";
+@import "components/home-page/cooperation";
