@@ -1,7 +1,19 @@
-/* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/global.scss";
+/* global */
 @import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/container.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/perfect-pixel.scss";
+@import "./global/global.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+/* mixing */
+@import "./mixing/circle.scss";
+@import "./mixing/rectangle.scss";
+@import "./mixing/title.scss";
+@import "./mixing/subtitle.scss";
+
+/* component */
+@import "./component/header.scss";
+
+/* home-page */
+@import "./component/home-page/intro.scss";

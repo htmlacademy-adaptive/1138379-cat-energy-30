@@ -1,0 +1,16 @@
+@media screen and (min-width: $container-mobile) {
+  .title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: $font-oswald;
+    color: $color-black;
+  }
+}
+
+@media screen and (min-width: $container-tablet) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
