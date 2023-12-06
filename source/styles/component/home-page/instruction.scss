@@ -1,0 +1,128 @@
+@media screen and (min-width: $container-mobile) {
+  .instruction__inner {
+    padding-top: 22px;
+    padding-bottom: 45px;
+  }
+
+  .instruction__title {
+    margin-bottom: 32px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .instruction__item {
+    position: relative;
+
+    display: flex;
+    padding: 8px 8px 8px 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: $color-green;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--nutrition::before {
+      background-image: url("../../images/instruction-nutrition.svg");
+    }
+
+    &--powder::before {
+      background-image: url("../../images/instruction-powder.svg");
+    }
+
+    &--eat::before {
+      background-image: url("../../images/instruction-eat.svg");
+    }
+
+    &--time::before {
+      background-image: url("../../images/instruction-time.svg");
+    }
+  }
+}
+
+@media screen and (min-width: $container-tablet) {
+  .instruction__inner {
+    padding-top: 48px;
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid $color-white-semi;
+  }
+
+  .instruction__title {
+    margin-bottom: 68px;
+  }
+
+  .instruction__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    counter-reset: number;
+
+    row-gap: 38px;
+  }
+
+  .instruction__item {
+    width: 46%;
+    min-height: 280px;
+    padding: 0;
+    padding-top: 112px;
+
+    &::before {
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(number);
+      position: absolute;
+      top: -28px;
+      left: 108px;
+      z-index: -1;
+
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-oswald;
+      color: $color-white-bold;
+
+      counter-increment: number;
+    }
+  }
+
+  .instruction__text {
+    width: 82%;
+  }
+}
+
+@media screen and (min-width: $container-desktop) {
+  .instruction__inner {
+    padding-top: 72px;
+    padding-bottom: 85px;
+
+    border: 0;
+  }
+
+  .instruction__item {
+    width: 20%;
+    min-height: 228px;
+  }
+
+  .instruction__text {
+    width: 100%;
+  }
+}

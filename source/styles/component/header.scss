@@ -1,0 +1,270 @@
+@media screen and (min-width: $container-mobile) {
+  .header__inner {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header__logo {
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &-icon {
+      &--mobile {
+        display: inline-flex;
+      }
+
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+  }
+
+  .header__logo-title {
+    display: inline-flex;
+
+    color: $color-black-extra;
+
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $color-black-bold;
+    }
+
+    &:active {
+      color: $color-black-normal;
+    }
+  }
+
+  .header__button {
+    width: 24px;
+    height: 24px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &--open {
+      background-image: url("../../images/menu-open.svg");
+    }
+
+    &--close {
+      background-image: url("../../images/menu-close.svg");
+    }
+  }
+
+  .header__menu {
+    display: none;
+
+    &--show {
+      position: absolute;
+      top: 65px;
+      left: 0;
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      text-align: center;
+
+      background-color: $color-white;
+    }
+
+    &-item {
+      margin-right: -20px;
+      margin-left: -20px;
+
+      border-top: 1px solid $color-white-extra;
+
+      &:last-child {
+        border-bottom: 1px solid $color-white-extra;
+      }
+    }
+
+    &-link {
+      position: relative;
+
+      display: inline-flex;
+      padding: 22px 20px;
+
+      font-size: 20px;
+      line-height: 20px;
+      font-family: $font-oswald;
+      color: $color-black;
+      text-transform: uppercase;
+
+      transition: color 0.3s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 16px;
+
+        width: calc(100% - 40px);
+        height: 2px;
+
+        background-color: $color-green;
+        opacity: 0;
+
+        transition: opacity 0.3s;
+      }
+
+      &:hover::before,
+      &:focus::before {
+        opacity: 1;
+      }
+
+      &:active {
+        color: $color-black-03;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $container-tablet) {
+  .header__inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header__logo {
+    &-icon {
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: inline-flex;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+  }
+
+  .header__logo-title {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4px;
+    margin-left: 4px;
+
+    gap: 34px;
+
+
+    &--show {
+      position: static;
+
+      display: flex;
+      flex-direction: row;
+      width: auto;
+
+      text-align: right;
+    }
+
+    &-item {
+      margin: 0;
+
+      border: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &-link {
+      padding: 0;
+
+      font-size: 18px;
+      line-height: 24px;
+
+      &::before {
+        bottom: -10px;
+
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $container-desktop) {
+  .header {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+  }
+
+  .header__inner {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .header__logo {
+    &-icon {
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: none;
+      }
+
+      &--desktop {
+        display: inline-flex;
+      }
+    }
+  }
+
+  .header__menu {
+    &-link {
+      font-size: 20px;
+      line-height: normal;
+      color: $color-white;
+
+      &::before {
+        background-color: $color-white;
+      }
+
+      &:active {
+        color: $color-white-03;
+      }
+    }
+  }
+}
