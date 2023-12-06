@@ -120,7 +120,6 @@
       font-family: $font-oswald;
       color: $color-black;
       text-transform: uppercase;
-      word-break: break-all;
 
       transition: color 0.3s;
 
@@ -132,7 +131,7 @@
         width: calc(100% - 40px);
         height: 2px;
 
-        background-color: $color-green-extra;
+        background-color: $color-green;
         opacity: 0;
 
         transition: opacity 0.3s;

@@ -1,6 +1,6 @@
 @media screen and (min-width: $container-mobile) {
   .intro {
-    background-image: linear-gradient($color-green-extra-085 60%, $color-white 0), url("../../images/intro-background-mobile@1x.png");
+    background-image: linear-gradient($color-green-085 60%, $color-white 0), url("../../images/intro-background-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto auto, 320px 302px;
@@ -8,7 +8,7 @@
 
   @media (min-resolution: 2dppx) {
     .intro {
-      background-image: linear-gradient($color-green-extra-085 60%, $color-white 0), url("../../images/intro-background-mobile@2x.png");
+      background-image: linear-gradient($color-green-085 60%, $color-white 0), url("../../images/intro-background-mobile@2x.png");
     }
   }
 
@@ -49,7 +49,7 @@
   }
 
   .intro__inner {
-    // margin-bottom: -82px;
+    margin-bottom: -82px;
     padding-top: 39px;
     padding-bottom: 0;
     padding-left: 120px;
@@ -114,7 +114,7 @@
       width: 100%;
       height: 694px;
 
-      background-color: $color-green-extra-085;
+      background-color: $color-green-085;
     }
   }
 

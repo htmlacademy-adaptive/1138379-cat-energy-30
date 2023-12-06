@@ -14,13 +14,13 @@
     color: $color-white;
     text-transform: uppercase;
 
-    background-color: $color-green-extra;
+    background-color: $color-green;
 
     transition: background-color 0.3s, color 0.3s;
 
     &:hover,
     &:focus {
-      background-color: $color-green;
+      background-color: $color-green-extra;
     }
 
     &:active {
