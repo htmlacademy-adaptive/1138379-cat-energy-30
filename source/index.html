@@ -180,7 +180,7 @@
               <a class="diet__link" href="#">
                 <span class="diet__span">Каталог Slim</span>
                 <svg class="diet__arrow" width="29" height="14">
-                  <use href="images/icon-arrow.svg#icon-arrow"></use>
+                  <use href="images/arrow.svg#arrow"></use>
                 </svg>
               </a>
             </li>
@@ -193,7 +193,7 @@
               <a class="diet__link" href="#">
                 <span class="diet__span">Каталог Pro</span>
                 <svg class="diet__arrow" width="29" height="14">
-                  <use href="images/icon-arrow.svg#icon-arrow"></use>
+                  <use href="images/arrow.svg#arrow"></use>
                 </svg>
               </a>
             </li>
@@ -237,15 +237,108 @@
       <!-- example start -->
       <section class="example">
         <div class="example__inner container">
-          <h2 class="example__title">Живой пример</h2>
+          <div class="example__description">
+            <h2 class="example__title title">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
+            <div class="example__result">
+              <div class="example__result-inner">
+                <strong class="example__result-strong">5 кг</strong>
+                <span class="example__result-text">Снижение веса</span>
+              </div>
+              <div class="example__result-inner">
+                <strong class="example__result-strong">60 ДНЕЙ</strong>
+                <span class="example__result-text">Затрачено времени</span>
+              </div>
+            </div>
+            <p class="example__subtext">
+              <span class="example__span">Затраты на питание:</span>
+              <span class="example__span">15 000 РУБ.</span>
+            </p>
+          </div>
+          <div class="example__demo">
+            <label class="visually-hidden" for="range"
+              >Живой пример изменения в весе.</label
+            >
+            <input
+              class="example__demo-range"
+              name="range"
+              id="range"
+              type="range"
+              min="0"
+              max="100"
+            />
+          </div>
         </div>
       </section>
       <!-- example end -->
+      <!-- contact start -->
+      <section class="contact">
+        <div class="contact__inner container">
+          <h2 class="contact__title">
+            Приглашаем <br />
+            к сотрудничеству дилеров!
+          </h2>
+          <address class="contact__address">
+            <span class="contact__text">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contact__text">Санкт-Петербург</span>
+          </address>
+        </div>
+        <div class="contact__map"></div>
+      </section>
+      <!-- contact end -->
     </main>
     <!-- main end -->
     <!-- footer start -->
     <footer class="footer">
-      <div class="footer__inner container"></div>
+      <div class="footer__inner container">
+        <a class="footer__logo-title" href="#">
+          <svg class="footer__logo-title-icon" width="128" height="24">
+            <use href="images/logo.svg#logo-title"></use>
+          </svg>
+          <span class="visually-hidden"
+            >Логотип интернет-сервиса 'CAT ENERGY'.</span
+          >
+        </a>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link circle" href="#">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use href="images/social.svg#vkontakte"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link circle" href="#">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use href="images/social.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Youtube.</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link circle" href="#">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use href="images/social.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__logo" href="#">
+          <span class="footer__logo-text">HTML Academy</span>
+          <span class="footer__logo-academy">
+            <svg class="footer__logo-academy-icon" width="27" height="34">
+              <use href="images/logo.svg#logo-academy"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
     </footer>
     <!-- footer end -->
   </body>

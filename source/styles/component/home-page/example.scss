@@ -1,0 +1,243 @@
+@media screen and (min-width: $container-mobile) {
+  .example {
+    background-color: $color-white-medium;
+  }
+
+  .example__inner {
+    padding-top: 26px;
+    padding-bottom: 40px;
+  }
+
+  .example__title {
+    margin-bottom: 40px;
+  }
+
+  .example__text {
+    margin-bottom: 20px;
+  }
+
+  .example__result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    gap: 32px;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      width: 124px;
+
+      text-align: center;
+
+      border-radius: 5px;
+    }
+
+    &-strong {
+      padding: 15px;
+
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      font-family: $font-oswald;
+      color: $color-black;
+      text-transform: uppercase;
+
+      border: 1px solid $color-white-normal;
+    }
+
+    &-text {
+      box-sizing: content-box;
+      max-width: 62px;
+      margin: -10px auto 0;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: lowercase;
+
+      background-color: $color-white-medium;
+    }
+  }
+
+  .example__subtext {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $font-oswald;
+    color: $color-black;
+    text-transform: uppercase;
+
+    gap: 2px;
+  }
+
+  .example__demo {
+    display: flex;
+    width: 280px;
+    margin: 0 auto;
+
+    background-image: url("../../images/example-demo-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px 256px;
+
+    &-range {
+      width: 100%;
+
+      background-color: transparent;
+
+      appearance: none;
+    }
+
+    &-range::-webkit-slider-thumb {
+      width: 40px;
+      height: 256px;
+
+      background-image: url("../../images/example-range-mobile.svg");
+      background-repeat: no-repeat;
+
+      appearance: none;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .example__demo {
+      background-image: url("../../images/example-demo-mobile@2x.png");
+    }
+  }
+}
+
+@media screen and (min-width: $container-tablet) {
+  .example {
+    background-image: linear-gradient($color-white 57%, $color-white-medium 0);
+  }
+
+  .example__inner {
+    padding-top: 48px;
+    padding-bottom: 102px;
+  }
+
+  .example__description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+  }
+
+  .example__title {
+    margin-bottom: 56px;
+  }
+
+  .example__text {
+    margin-bottom: 56px;
+  }
+
+  .example__result {
+    width: 52%;
+    margin: 0;
+
+    gap: 44px;
+
+    &-inner {
+      width: 162px;
+    }
+
+    &-strong {
+      padding-bottom: 20px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &-text {
+      max-width: 125px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: $color-white;
+    }
+  }
+
+  .example__subtext {
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 48%;
+    min-height: 62px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    gap: 10px;
+  }
+
+  .example__demo {
+    width: 560px;
+
+    background-image: url("../../images/example-demo-tablet@1x.png");
+    background-size: 560px 512px;
+
+    &-range::-webkit-slider-thumb {
+      height: 512px;
+
+      background-image: url("../../images/example-range-tablet.svg");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .example__demo {
+      background-image: url("../../images/example-demo-tablet@2x.png");
+    }
+  }
+}
+
+@media screen and (min-width: $container-desktop) {
+  .example__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 72px;
+  }
+
+  .example__description {
+    flex-direction: column;
+    width: calc(100% - 788px);
+    margin-bottom: 0;
+  }
+
+  .example__title {
+    margin-bottom: 140px;
+  }
+
+  .example__text {
+    margin-bottom: 70px;
+  }
+
+  .example__result {
+    justify-content: start;
+    width: auto;
+    margin-bottom: 14px;
+
+    &-text {
+      background-color: $color-white-medium;
+    }
+  }
+
+  .example__subtext {
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    margin-bottom: 0;
+
+    gap: 64px;
+  }
+
+  .example__demo {
+    margin: 0;
+  }
+}
