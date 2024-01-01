@@ -37,7 +37,7 @@
     text-size-adjust: 100%;
   }
 
-  main {
+  .main {
     flex-grow: 1;
   }
 
@@ -50,18 +50,9 @@
     object-fit: contain;
   }
 
-  ul,
-  ol {
-    list-style-type: none;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
-  }
-
-  button {
-    cursor: pointer;
   }
 }
 

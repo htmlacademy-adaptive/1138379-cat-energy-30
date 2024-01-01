@@ -1,0 +1,22 @@
+@media screen and (min-width: $container-mobile) {
+  .error {
+    border: 2px solid $color-red;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid $color-red;
+    }
+  }
+
+  .error + .form__icon {
+    color: $color-red;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-red;
+    }
+  }
+}
