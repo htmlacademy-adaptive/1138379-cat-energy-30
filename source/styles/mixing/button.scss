@@ -1,0 +1,39 @@
+@media screen and (min-width: $container-mobile) {
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    padding: 10px 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $font-oswald;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+
+    background-color: $color-green;
+
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: $color-green-extra;
+    }
+
+    &:active {
+      color: $color-white-03;
+    }
+  }
+}
+
+@media screen and (min-width: $container-tablet) {
+  .button {
+    padding: 14px 20px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

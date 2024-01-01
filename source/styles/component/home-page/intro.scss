@@ -15,7 +15,7 @@
   .intro__inner {
     display: flex;
     flex-direction: column;
-    padding-top: 27px;
+    padding-top: 30px;
     padding-bottom: 20px;
 
     font-family: $font-oswald;
@@ -37,10 +37,6 @@
     line-height: 14px;
     text-transform: uppercase;
   }
-
-  .intro__picture {
-    margin-bottom: 3px;
-  }
 }
 
 @media screen and (min-width: $container-tablet) {
@@ -50,7 +46,7 @@
 
   .intro__inner {
     margin-bottom: -82px;
-    padding-top: 39px;
+    padding-top: 44px;
     padding-bottom: 0;
     padding-left: 120px;
 

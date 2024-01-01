@@ -2,14 +2,17 @@
   .diet__list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
-    gap: 23px;
+    list-style-type: none;
+
+    gap: 20px;
   }
 
   .diet__item {
     position: relative;
 
-    padding: 30px 33px 18px 20px;
+    padding: 30px 33px 22px 20px;
 
     background-color: $color-white-bold;
 
@@ -27,10 +30,10 @@
         top: 21px;
         left: 20px;
 
-        width: 50px;
-        height: 50px;
+        width: 52px;
+        height: 54px;
 
-        background-image: url("../../images/diet-cat-slim.svg");
+        background-image: url("../../images/icons/stack.svg#diet-cat-slim");
       }
     }
 
@@ -42,7 +45,7 @@
         width: 67px;
         height: 50px;
 
-        background-image: url("../../images/diet-cat-pro.svg");
+        background-image: url("../../images/icons/stack.svg#diet-cat-pro");
       }
     }
   }
@@ -112,7 +115,7 @@
       left: 63%;
 
       width: 200px;
-      height: 212px;
+      height: 210px;
     }
 
     &--pro::before {

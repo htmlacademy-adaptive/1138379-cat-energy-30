@@ -8,9 +8,10 @@
 
 /* mixing */
 @import "./mixing/circle.scss";
-@import "./mixing/rectangle.scss";
+@import "./mixing/button.scss";
 @import "./mixing/title.scss";
 @import "./mixing/subtitle.scss";
+@import "./mixing/title-line.scss";
 
 /* component */
 @import "./component/header.scss";
@@ -22,3 +23,13 @@
 @import "./component/home-page/instruction.scss";
 @import "./component/home-page/example.scss";
 @import "./component/home-page/contact.scss";
+
+/* form-page */
+@import "./component/form-page/form.scss";
+
+/* catalog-page */
+@import "./component/catalog-page/catalog.scss";
+@import "./component/catalog-page/product.scss";
+
+/* mixing */
+@import "./mixing/error.scss";

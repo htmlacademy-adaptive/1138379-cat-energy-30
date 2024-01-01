@@ -1,6 +1,6 @@
 @media screen and (min-width: $container-mobile) {
   .instruction__inner {
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 45px;
   }
 
@@ -11,6 +11,8 @@
   .instruction__list {
     display: flex;
     flex-direction: column;
+
+    list-style-type: none;
 
     gap: 10px;
   }
@@ -34,22 +36,23 @@
       background-color: $color-green;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 28px;
     }
 
     &--nutrition::before {
-      background-image: url("../../images/instruction-nutrition.svg");
+      background-image: url("../../images/icons/stack.svg#instruction-nutrition");
     }
 
     &--powder::before {
-      background-image: url("../../images/instruction-powder.svg");
+      background-image: url("../../images/icons/stack.svg#instruction-powder");
     }
 
     &--eat::before {
-      background-image: url("../../images/instruction-eat.svg");
+      background-image: url("../../images/icons/stack.svg#instruction-eat");
     }
 
     &--time::before {
-      background-image: url("../../images/instruction-time.svg");
+      background-image: url("../../images/icons/stack.svg#instruction-time");
     }
   }
 }
