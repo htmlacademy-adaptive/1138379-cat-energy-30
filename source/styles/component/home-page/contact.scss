@@ -29,6 +29,17 @@
   .contact__map {
     width: 100%;
     height: 362px;
+
+    background-image: url("../../images/contact-map-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contact__map {
+      background-image: url("../../images/contact-map-mobile@2x.png");
+    }
   }
 }
 
@@ -56,6 +67,14 @@
 
   .contact__map {
     height: 400px;
+
+    background-image: url("../../images/contact-map-tablet@1x.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contact__map {
+      background-image: url("../../images/contact-map-tablet@2x.png");
+    }
   }
 }
 
@@ -87,5 +106,15 @@
     width: 50%;
 
     text-align: left;
+  }
+
+  .contact__map {
+    background-image: url("../../images/contact-map-desktop@1x.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contact__map {
+      background-image: url("../../images/contact-map-desktop@2x.png");
+    }
   }
 }
