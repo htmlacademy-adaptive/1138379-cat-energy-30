@@ -31,6 +31,7 @@
   }
 
   .product__text {
+    display: block;
     padding-top: 12px;
     padding-bottom: 12px;
 
@@ -52,23 +53,38 @@
   }
 
   .product__present {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 58px;
+    padding-top: 188px;
     padding-bottom: 43px;
 
-    background-image: url("../../images/product-mobile@1x.jpg");
+    background-image: linear-gradient($color-green-085 100%, $color-white 0), url("../../images/product-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 280px 100%;
+    background-position: center top, center;
+    background-size: auto auto, 280px 100%;
 
     gap: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 100px;
+
+      width: 78px;
+      height: 80px;
+
+      background-image: url("../../images/icons/stack.svg#gift");
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-resolution: 2dppx) {
     .product__present {
-      background-image: url("../../images/product-mobile@2x.jpg");
+      background-image: linear-gradient($color-green-085 100%, $color-white 0), url("../../images/product-mobile@2x.jpg");
     }
   }
 
@@ -154,21 +170,29 @@
   .product__present {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 60px 126px 60px 80px;
+    padding: 70px 126px 70px 80px;
 
-    background-image: url("../../images/product-tablet@1x.jpg");
+    background-image: linear-gradient($color-green-085 100%, $color-white 0), url("../../images/product-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    background-position: center top, center;
+    background-size: auto auto, 707px 100%;
 
     gap: 48px;
+
+    &::before {
+      top: 56px;
+      left: 78px;
+
+      width: 80px;
+      height: 82px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
     .product__present {
-      background-image: url("../../images/product-tablet@2x.jpg");
+      background-image: linear-gradient($color-green-085 100%, $color-white 0), url("../../images/product-tablet@2x.jpg");
     }
   }
 
@@ -241,8 +265,17 @@
     gap: 0;
   }
 
+  .product__description-text {
+    width: 42px;
+
+    text-align: left;
+  }
+
   .product__link {
     width: 244px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .product__present {
@@ -250,7 +283,7 @@
     align-self: flex-start;
     width: 245px;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 187px;
     padding-bottom: 43px;
 
     background-image: url("../../images/product-desktop@1x.jpg");
@@ -259,8 +292,8 @@
     gap: 45px;
 
     &::before {
-      top: 57px;
-      left: 78px;
+      top: 56px;
+      left: 84px;
     }
   }
 

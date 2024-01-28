@@ -57,6 +57,10 @@
     &:focus .footer__logo-academy {
       color: $color-green;
     }
+
+    &:hover .footer__logo-academy {
+      color: $color-green;
+    }
   }
 
   .footer__logo-text {
@@ -69,10 +73,6 @@
     color: $color-black-medium;
 
     transition: color 0.3s;
-
-    &:hover {
-      color: $color-green;
-    }
   }
 }
 

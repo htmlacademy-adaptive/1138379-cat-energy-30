@@ -11,7 +11,10 @@
     <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU" defer></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU"
+      defer
+    ></script>
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page">
@@ -73,10 +76,10 @@
             </svg>
           </span>
         </a>
-        <button class="header__button header__button--open" type="button">
+        <button class="header__button header__button--close" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="header__menu header__menu--show">
+        <ul class="header__menu">
           <li class="header__menu-item">
             <a
               class="header__menu-link header__menu-link--extension"
@@ -92,7 +95,9 @@
             >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--extension" href="#"
+            <a
+              class="header__menu-link header__menu-link--active header__menu-link--extension"
+              href="#"
               >Подбор программы</a
             >
           </li>
@@ -213,10 +218,10 @@
               <ul class="form__list form__list--contact">
                 <li class="form__item form__item--contact">
                   <input
-                    class="form__input-text form__input-text--contact"
+                    class="form__input-text form__input-text--email"
                     id="email"
                     name="email"
-                    type="text"
+                    type="email"
                     placeholder="kuklachev@gmail.com"
                     required
                   />
@@ -233,10 +238,10 @@
                 </li>
                 <li class="form__item form__item--contact">
                   <input
-                    class="form__input-text form__input-text--contact"
+                    class="form__input-text form__input-text--tel"
                     id="telephone"
                     name="telephone"
-                    type="text"
+                    type="tel"
                     placeholder="8 (960) 900-60-90"
                     required
                   />
@@ -265,9 +270,13 @@
               </div>
               <textarea
                 class="form__textarea form__textarea--comment"
+                id="placeholder"
                 name="comment"
                 placeholder="Расскажите обо всех повадках кота"
               ></textarea>
+              <label class="visually-hidden" for="placeholder">
+                Расскажите обо всех повадках кота
+              </label>
             </div>
             <!-- comment end -->
             <!-- additional start -->
@@ -394,7 +403,10 @@
             </a>
           </li>
         </ul>
-        <a class="footer__logo" href="#">
+        <a
+          class="footer__logo"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
           <span class="footer__logo-text">HTML Academy</span>
           <span class="footer__logo-academy">
             <svg class="footer__logo-academy-icon" width="27" height="34">

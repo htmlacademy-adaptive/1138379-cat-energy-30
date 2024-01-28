@@ -171,16 +171,23 @@
   }
 
   .form__label {
+    flex-shrink: 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     font-family: $font-oswald;
     color: $color-black-semi;
     text-transform: uppercase;
-    white-space: nowrap;
+
+    &--feature,
+    &--contact {
+      max-width: 94px;
+    }
 
     &--program {
       display: inline-flex;
+      flex-shrink: 1;
       align-items: center;
 
       gap: 14px;
@@ -188,6 +195,7 @@
       &::before {
         content: "";
 
+        flex-shrink: 0;
         width: 30px;
         height: 30px;
 
@@ -355,7 +363,7 @@
 
   .form__input-text {
     height: 52px;
-    padding-right: 20px;
+    padding-right: 46px;
     padding-left: 20px;
 
     font-size: 20px;
@@ -373,6 +381,11 @@
     line-height: normal;
 
     gap: 21px;
+
+    &--feature,
+    &--contact {
+      max-width: 160px;
+    }
 
     &::before {
       width: 40px;
@@ -490,8 +503,12 @@
   }
 
   .form__input-text {
-    &--contact {
+    &--email {
       width: 494px;
+    }
+
+    &--tel {
+      width: 472px;
     }
   }
 

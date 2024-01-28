@@ -148,6 +148,12 @@
     &:active {
       color: $color-black-03;
     }
+
+    &--active {
+      &::before {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -187,6 +193,8 @@
       width: auto;
 
       text-align: right;
+
+      background-color: transparent;
     }
   }
 
@@ -216,10 +224,8 @@
 
 @media screen and (min-width: $container-desktop) {
   .header {
-    position: absolute;
+    position: relative;
     z-index: 1;
-
-    width: 100%;
 
     &--extension {
       position: static;
@@ -237,10 +243,6 @@
   .header__logo-title-icon {
     width: 118px;
     height: 21px;
-  }
-
-  .header__menu {
-    background-color: transparent;
   }
 
   .header__menu-link {
