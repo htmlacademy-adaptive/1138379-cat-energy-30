@@ -97,25 +97,20 @@
     left: 0;
 
     margin-bottom: -250px;
-
-    // background-image: linear-gradient(to left, rgba(82, 169, 31, 0.85) 50%, $color-white 0);
-    // background-repeat: no-repeat;
-    // background-position: 0 -160px;
-    // background-size: auto auto;
-
+    
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
 
-      width: 100%;
+      width: 50%;
       height: 854px;
 
-      background-image: linear-gradient(to left, $color-green-085 50%, $color-white 0), url("../../images/intro-background-desktop@1x.png");
+      background-image: linear-gradient(to left,$color-green-085 0, $color-green-085 100%), url("../../images/intro-background-desktop@1x.png");
       background-repeat: no-repeat;
-      background-position: 0 -160px, 720px top;
-      background-size: auto auto, 1040px 694px;
+      background-position: top left, left top;
+      background-size: 100% 694px, 1024px 694px;
     }
   }
 
@@ -125,11 +120,6 @@
     padding-top: 226px;
     padding-bottom: 346px;
     padding-left: 190px;
-
-    // background-image: linear-gradient(to left, $color-green-085 50%, $color-white 0), url("../../images/intro-background-desktop@1x.png");
-    // background-repeat: no-repeat;
-    // background-position: 0 -160px, 720px top;
-    // background-size: auto auto, 1040px 694px;
   }
 
   .intro__title {
