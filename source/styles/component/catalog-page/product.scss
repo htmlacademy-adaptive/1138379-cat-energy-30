@@ -35,6 +35,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
 
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     font-family: $font-oswald;
@@ -72,13 +73,14 @@
       content: "";
       position: absolute;
       top: 60px;
-      left: 100px;
+      left: auto;
 
       width: 78px;
       height: 80px;
 
       background-image: url("../../images/icons/stack.svg#gift");
       background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -165,6 +167,9 @@
 
   .product__link {
     padding: 7px 20px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .product__present {
@@ -246,7 +251,7 @@
   .product__item {
     justify-content: start;
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 
     border-bottom: 1px solid $color-white-normal;
   }

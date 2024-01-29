@@ -49,12 +49,24 @@
   }
 
   .form__subtitle {
+    position: relative;
+
     max-width: 205px;
 
     line-height: 26px;
     text-transform: none;
 
     background-color: $color-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 10px;
+      height: 10px;
+    }
 
     &--comment {
       padding-right: 20px;
@@ -470,6 +482,13 @@
         top: 87px;
       }
     }
+  }
+
+  .form__subtitle {
+    position: relative;
+
+    margin-left: -40px;
+    padding-left: 40px;
   }
 
   .form__list {

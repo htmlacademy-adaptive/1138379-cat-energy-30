@@ -21,19 +21,32 @@
     align-items: center;
 
     gap: 56px;
+
+    & .header__logo-image {
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+
+    & .header__logo-title {
+      &:hover,
+      &:focus {
+        color: $color-black-bold;
+      }
+
+      &:active {
+        color: $color-black-normal;
+      }
+    }
   }
 
   .header__logo-image {
     transition: opacity 0.3s;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
   }
 
   .header__logo-title {
@@ -42,15 +55,6 @@
     color: $color-black-extra;
 
     transition: color 0.3s;
-
-    &:hover,
-    &:focus {
-      color: $color-black-bold;
-    }
-
-    &:active {
-      color: $color-black-normal;
-    }
   }
 
   .header__button {
@@ -148,12 +152,6 @@
     &:active {
       color: $color-black-03;
     }
-
-    &--active {
-      &::before {
-        opacity: 1;
-      }
-    }
   }
 }
 
@@ -218,6 +216,12 @@
       bottom: -10px;
 
       width: 100%;
+    }
+
+    &--active {
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }
