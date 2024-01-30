@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // menu
   const button = document.querySelector('.header__button');
   const menu = document.querySelector('.header__menu');
+  button.classList.remove('header__button--nojs');
+  menu.classList.remove('header__menu--nojs');
 
   button.onclick = function () {
     button.classList.toggle('header__button--close');

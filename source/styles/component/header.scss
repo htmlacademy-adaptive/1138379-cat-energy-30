@@ -22,24 +22,23 @@
 
     gap: 56px;
 
-    & .header__logo-image {
-      &:hover,
-      &:focus {
+    &:hover,
+    &:focus {
+      .header__logo-image {
         opacity: 0.8;
       }
 
-      &:active {
-        opacity: 0.6;
+      .header__logo-title {
+        color: $color-black-bold;
       }
     }
 
-    & .header__logo-title {
-      &:hover,
-      &:focus {
-        color: $color-black-bold;
+    &:active {
+      .header__logo-image {
+        opacity: 0.6;
       }
 
-      &:active {
+      .header__logo-title {
         color: $color-black-normal;
       }
     }
@@ -83,6 +82,10 @@
     &--close {
       background-image: url("../../images/icons/stack.svg#menu-close");
     }
+
+    &--nojs {
+      display: none;
+    }
   }
 
   .header__menu {
@@ -102,6 +105,16 @@
       text-align: center;
 
       background-color: $color-white;
+    }
+
+    &--nojs {
+      position: static;
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      text-align: center;
     }
   }
 
@@ -193,6 +206,11 @@
       text-align: right;
 
       background-color: transparent;
+    }
+
+    &--nojs {
+      flex-direction: row;
+      width: auto;
     }
   }
 
