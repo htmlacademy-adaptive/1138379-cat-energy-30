@@ -44,15 +44,21 @@
 @media screen and (min-width: $container-desktop) {
   .title-line {
     &::before {
-      top: 90px;
-      right: -110px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 100vw;
+      height: 3px;
+
+      background-color: $color-green;
+      box-shadow: 100vw 0 0 $color-green;
+      transform: translateY(-50%);
     }
 
     &::after {
-      top: 90px;
-      left: -110px;
-
-      width: 6%;
+      display: none;
     }
   }
 }

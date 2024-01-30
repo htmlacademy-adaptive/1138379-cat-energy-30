@@ -112,7 +112,8 @@
 
     &--slim::before {
       top: 80px;
-      left: 63%;
+      right: 64px;
+      left: auto;
 
       width: 200px;
       height: 210px;
@@ -120,7 +121,8 @@
 
     &--pro::before {
       top: 91px;
-      left: 58%;
+      right: 30px;
+      left: auto;
 
       width: 267px;
       height: 199px;

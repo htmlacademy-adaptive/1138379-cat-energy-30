@@ -34,10 +34,20 @@
     row-gap: 20px;
   }
 
+  .catalog__block-link {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
   .catalog__picture {
     display: flex;
     justify-content: center;
     width: 50%;
+  }
+
+  .catalog__image {
+    max-width: none;
   }
 
   .catalog__description {
@@ -57,9 +67,11 @@
   }
 
   .catalog__description-subtitle {
+    display: block;
     width: 80px;
     margin-bottom: 14px;
 
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     font-family: $font-oswald;
@@ -111,6 +123,15 @@
       color: $color-black-semi;
 
       background-color: $color-white-bold;
+
+      &:hover,
+      &:focus {
+        background-color: #ebebeb;
+      }
+
+      &:active {
+        color: $color-black-semi;
+      }
     }
   }
 }
@@ -129,7 +150,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    column-gap: 60px;
 
     row-gap: 48px;
   }
@@ -153,6 +175,10 @@
     padding-bottom: 40px;
 
     gap: 0;
+  }
+
+  .catalog__block-link {
+    width: auto;
   }
 
   .catalog__picture {

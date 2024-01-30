@@ -239,6 +239,10 @@
 }
 
 @media screen and (min-width: $container-desktop) {
+  .example {
+    background-image: linear-gradient($color-white 28%, $color-white-medium 0);
+  }
+
   .example__inner {
     display: flex;
     justify-content: space-between;
