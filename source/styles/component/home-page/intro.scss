@@ -105,12 +105,13 @@
       right: 0;
 
       width: 50%;
-      height: 854px;
+      min-height: 696px;
 
-      background-image: linear-gradient(to left,$color-green-085 0, $color-green-085 100%), url("../../images/intro-background-desktop@1x.png");
+      background-color: #63a73a;
+      background-image: linear-gradient(to left, $color-green-085 0, $color-green-085 100%), url("../../images/intro-background-desktop@1x.png");
       background-repeat: no-repeat;
-      background-position: top left, left top;
-      background-size: 100% 694px, 1024px 694px;
+      background-position: 0;
+      background-size: cover;
     }
   }
 

@@ -162,6 +162,10 @@
     &:disabled + .form__label--program {
       opacity: 0.3;
     }
+
+    &:focus + .form__label--program::before {
+      border: 1px solid $color-white-thin;
+    }
   }
 
   .form__input-checkbox {
@@ -171,6 +175,10 @@
 
     &:disabled + .form__label--additional {
       opacity: 0.3;
+    }
+
+    &:focus + .form__label--additional::before {
+      border: 1px solid $color-white-thin;
     }
   }
 

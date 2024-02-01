@@ -13,6 +13,7 @@
   .contact__title {
     width: 50%;
 
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     font-family: $font-oswald;
@@ -23,7 +24,10 @@
   .contact__address {
     width: 50%;
 
+    font-style: normal;
+    font-size: 14px;
     line-height: 20px;
+    color: $color-black-semi;
   }
 
   .contact__map {
@@ -45,7 +49,7 @@
 
 @media screen and (min-width: $container-tablet) {
   .contact__inner {
-    padding: 60px 70px 60px;
+    padding: 60px 40px 60px;
   }
 
   .contact__title {
@@ -60,6 +64,7 @@
     flex-direction: column;
     width: 30%;
 
+    font-size: 16px;
     text-align: right;
 
     gap: 18px;
@@ -80,6 +85,10 @@
 
 @media screen and (min-width: $container-desktop) {
   .contact {
+    position: relative;
+  }
+
+  .contact__container {
     position: relative;
   }
 
